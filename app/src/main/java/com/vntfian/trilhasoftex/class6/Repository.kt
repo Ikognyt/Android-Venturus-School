@@ -1,4 +1,4 @@
-package com.vntfian.trilhasoftex
+package com.vntfian.trilhasoftex.class6
 
 class Repository(
     user1: User = User("Um", ""),
@@ -19,7 +19,7 @@ class Repository(
 
     companion object {
         private lateinit var INSTANCE: Repository
-        fun getInstance(): Repository{
+        fun getInstance(): Repository {
             synchronized(Repository::class) {
                 INSTANCE = Repository()
             }

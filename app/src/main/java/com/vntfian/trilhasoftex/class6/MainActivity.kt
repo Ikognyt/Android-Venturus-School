@@ -1,8 +1,9 @@
-package com.vntfian.trilhasoftex
+package com.vntfian.trilhasoftex.class6
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import com.vntfian.trilhasoftex.R
 
 class MainActivity : AppCompatActivity() {
 
@@ -12,6 +13,6 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        Repository.getInstance().getFormattedUserNames().forEach(){ user -> Log.i(tag, "onCreate Trace User: $user") }
+        Repository.getInstance().getFormattedUserNames().forEach { user -> Log.i(tag, "onCreate Trace User: $user") }
     }
 }
