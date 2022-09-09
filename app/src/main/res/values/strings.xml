@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">TrilhaSoftex</string>
     <string name="hello_android">Hello Android!</string>
+    <string name="title_activity_swipe_to_dismiss_modifier">SwipeToDismissModifier</string>
 </resources>
