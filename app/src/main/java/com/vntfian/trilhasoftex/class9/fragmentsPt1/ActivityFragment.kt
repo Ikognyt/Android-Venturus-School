@@ -1,12 +1,17 @@
 package com.vntfian.trilhasoftex.class9.fragmentsPt1
 
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.app.AppCompatDelegate
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentActivity
+import androidx.navigation.NavGraph
+import androidx.navigation.NavGraphBuilder
+import androidx.navigation.fragment.NavHostFragment
 import com.vntfian.trilhasoftex.R
+import com.vntfian.trilhasoftex.class10.ButtonsMenuUi
 
-class ActivityFragment: FragmentActivity(R.layout.fragment_activity) {
+class ActivityFragment: AppCompatActivity(R.layout.fragment_activity) {
 
     private val fragmentManager = supportFragmentManager
     private val transaction = fragmentManager.beginTransaction()
@@ -16,7 +21,8 @@ class ActivityFragment: FragmentActivity(R.layout.fragment_activity) {
         AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
 
         //add(MusicListFragment())
-        add(FirstFragment())
+        //add(FirstFragment())
+        add(ButtonsMenuUi())
         commit()
 
     }

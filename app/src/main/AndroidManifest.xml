@@ -13,9 +13,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.TrilhaSoftex"
         tools:targetApi="31">
-
-        <activity android:name=".class8.SecondActivity" android:exported="true" />
-
+        <activity
+            android:name=".class8.SecondActivity"
+            android:exported="true" />
         <activity
             android:name=".class9.fragmentsPt1.ActivityFragment"
             android:exported="true">
