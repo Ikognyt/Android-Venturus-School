@@ -22,5 +22,4 @@ class FirstFragment: Fragment(R.layout.first_fragment_layout) {
     }
 
 
-
 }
