@@ -1,4 +1,4 @@
-package com.vntfian.trilhasoftex.class9.fragmentsPt1
+package com.vntfian.trilhasoftex
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
@@ -10,6 +10,7 @@ import androidx.navigation.NavGraphBuilder
 import androidx.navigation.fragment.NavHostFragment
 import com.vntfian.trilhasoftex.R
 import com.vntfian.trilhasoftex.class10.ButtonsMenuUi
+import com.vntfian.trilhasoftex.class15.SharedPref
 
 class ActivityFragment: AppCompatActivity(R.layout.fragment_activity) {
 
@@ -22,8 +23,10 @@ class ActivityFragment: AppCompatActivity(R.layout.fragment_activity) {
 
         //add(MusicListFragment())
         //add(FirstFragment())
-        add(ButtonsMenuUi())
+        //add(ButtonsMenuUi())
+        add(SharedPref())
         commit()
+
 
     }
 

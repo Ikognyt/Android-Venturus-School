@@ -17,7 +17,7 @@
             android:name=".class8.SecondActivity"
             android:exported="true" />
         <activity
-            android:name=".class9.fragmentsPt1.ActivityFragment"
+            android:name=".ActivityFragment"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
