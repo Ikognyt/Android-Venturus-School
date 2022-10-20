@@ -7,7 +7,7 @@ import com.vntfian.trilhasoftex.R
 
 class MainActivity : AppCompatActivity() {
 
-    companion object val tag = "MainActivity"
+    companion object val tag = "DebugFragment"
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
