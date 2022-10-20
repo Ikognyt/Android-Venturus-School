@@ -11,6 +11,10 @@ import androidx.navigation.fragment.NavHostFragment
 import com.vntfian.trilhasoftex.R
 import com.vntfian.trilhasoftex.class10.ButtonsMenuUi
 import com.vntfian.trilhasoftex.class15.SharedPref
+import com.vntfian.trilhasoftex.class18.NotificationTest
+import com.vntfian.trilhasoftex.class19.AcessibilityFragment
+import com.vntfian.trilhasoftex.class20.DebugFragment
+import com.vntfian.trilhasoftex.class21.Calculadora
 
 class ActivityFragment: AppCompatActivity(R.layout.fragment_activity) {
 
@@ -19,14 +23,19 @@ class ActivityFragment: AppCompatActivity(R.layout.fragment_activity) {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
+        AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
 
         //add(MusicListFragment())
         //add(FirstFragment())
         //add(ButtonsMenuUi())
-        add(SharedPref())
+        //add(SharedPref())
+        //add(AcessibilityFragment())
+        add(DebugFragment())
         commit()
 
+        val notification = NotificationTest()
+        notification.createNotificationChannel(this)
+        notification.showNotification(this)
 
     }
 

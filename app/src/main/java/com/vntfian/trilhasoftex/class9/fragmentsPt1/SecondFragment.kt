@@ -12,7 +12,7 @@ class SecondFragment: Fragment(R.layout.second_fragment_layout) {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        view.findViewById<AppCompatButton>(R.id.btn_to_first_fragment).setOnClickListener(){
+        view.findViewById<AppCompatButton>(R.id.btn_to_first_fragment).setOnClickListener {
             findNavController().navigate(SecondFragmentDirections.actionSecondFragmentToFirstFragment())
         }
     }

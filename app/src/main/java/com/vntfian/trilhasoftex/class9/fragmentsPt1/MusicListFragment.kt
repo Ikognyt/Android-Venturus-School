@@ -8,7 +8,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.vntfian.trilhasoftex.R
 import com.vntfian.trilhasoftex.class11.MusicListAdapter
 
-class MusicListFragment(): Fragment(R.layout.layout_fragment_music_list) {
+class MusicListFragment : Fragment(R.layout.layout_fragment_music_list) {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
